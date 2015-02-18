@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+
+    <script>
+      (function (loaderURL) {
+        var loaderModule = document.createElement("script");
+        loaderModule.src = loaderURL;
+        loaderModule.async = 1;
+        var currentTag = document.getElementsByTagName('script')[0];
+        currentTag.parentNode.insertBefore(loaderModule, currentTag);
+      })("/hfos/loader.js");
+    </script>
+
+    <meta charset="utf-8" />
+    <title>Loading HFOS</title>
+    <!--The version in the query is useless and is just to make sure that the browser fetches the new favicon, instead of the cached version. -->
+    <link rel="icon" href="favicon.ico?version=1" type="img/x-icon" />
+  </head>
+  <body>
+    <span style="font-family: Arial, Helvetica, sans-serif">Loading HFOS, please wait</span>
+  </body>
+</html>
