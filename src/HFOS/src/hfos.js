@@ -7,10 +7,6 @@
 
 */
 
-// Add a hfos object with an addNativeModule function so native modules can be inserted when loading.
-
-
-
 //Define core components
 
 define(["core"],

@@ -35,11 +35,8 @@ if (!window.requirejs) {
 
 //If code execution reaches here, assume that RequireJS loading has succeeded.
 
-//We don't want to explicitly set a data-main attribute for requirejs, so we use require.config:
+//We don't want to explicitly set a data-main attribute for RequireJS, so we use require.config:
 
 require.config({
   "baseUrl": "/src/hfos.js" //Absolute path
 });
-
-//Define dependencies using requireJS and load other HFOS modules
-
