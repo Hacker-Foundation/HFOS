@@ -2,6 +2,27 @@
   This file is used to initialize all things before starting to use any of the secondary HFOS APIs.
 */
 
+
+/* RequireJS */
+
+
+
+require.config({
+    "baseUrl": "/"
+});
+
+define([
+
+"./core"
+
+],function () {
+
+  }
+);
+
+
+
+
 //Used to initialize an anonymous namespace
 (function (window) {
   var hfos = {
