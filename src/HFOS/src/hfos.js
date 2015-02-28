@@ -11,9 +11,12 @@
 
 define(["core"],
 function (hfos) {
-
-  alert(3);
   window.hfos = hfos;
-  return hfos;
+  //Run the hfos onload listeners
+  HFOSOnloadStorage["length"]
+  for (i in HFOSOnloadStorage) {
+    HFOSOnloadStorage[i]();
+  }
 
+  return hfos;
 });
